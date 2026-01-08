@@ -61,6 +61,19 @@ This virtual internship provided a hands-on simulation of daily backend engineer
   - Update the sender and recipient balances when transactions are successfully processed.
   - Run TaskThreeTests, inspect the final balance of the waldorf user in your debugger, and submit the rounded-down value.
 
+### Task 4: project setup
+
+- What you'll learn
+  - How backend services consume external REST APIs as part of a larger system architecture.
+  - How to use Spring’s RestTemplate to send POST requests and deserialize JSON responses into Java objects.
+  - How API boundaries act as contracts between teams, enabling independent development and safer system changes.
+  - How to incorporate external incentive logic into an existing transaction-processing workflow.
+- What you'll do
+  - Run the provided Incentive API service locally and connect Midas Core to its /incentive endpoint.
+  - Implement a method that posts validated Transaction objects to the Incentive API and receives an Incentive response.
+  - Update your transaction-processing logic to store the incentive amount and correctly adjust user balances—adding incentives to recipients but not subtracting them from senders.
+  - Run TaskFourTests, use your debugger to determine wilbur’s final balance, and submit the rounded-down result.
+
 ---
 
 ## 🧰 Tech Stack
