@@ -35,6 +35,18 @@ This virtual internship provided a hands-on simulation of daily backend engineer
   - Add the required dependencies to your Spring Boot project and update configuration files.
   - Build and run the project, then verify your setup by running automated tests.
 
+### Task 2: project setup
+
+- What you'll learn
+  - How message queues—specifically Kafka—are used to decouple services, improve scalability, and enable asynchronous communication in large backend systems.
+  - How to integrate Kafka into a Spring Boot application by creating a listener that consumes messages from a configured topic.
+  - How to deserialize incoming Kafka messages into domain objects and verify your integration using an embedded Kafka instance and automated tests.
+- What you'll do
+  - Implement a Kafka listener in Midas Core that reads from the topic defined in application.yml and deserializes each incoming message into the provided Transaction class.
+  - Configure your listener to use the project’s existing Spring Boot setup—no need to specify host/port, as the tests use an embedded Kafka instance.
+  - Run TaskTwoTests, use your debugger to inspect the first four received transactions, and record the amounts attached to each.
+  - Submit the list of the four transaction amounts once your listener is working correctly.
+
 ---
 
 ## 🧰 Tech Stack
